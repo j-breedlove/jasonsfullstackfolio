@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Container, Heading, Typewriter, Block } from "./home.styles"; // Import your styled components
+import { Container, Typewriter } from "./home.styles"; // Import your styled components
+import HeaderBlock from "../../components/header-block/header-block.component";
 
 function Home() {
   const wordsList = [
@@ -38,15 +39,13 @@ function Home() {
   return (
     <div className="App">
       <Container>
-        <Block>
-          <Heading>Welcome to my portfolio website.</Heading>
-        </Block>
-        <Block spacing="10px">
-          <Heading>I am...</Heading>
-        </Block>
-        <Block>
-          <Typewriter>{text}</Typewriter>
-        </Block>
+        <HeaderBlock />
+        <Typewriter>{text}</Typewriter>
+        <p>
+          A Full-Stack Developer enthusiastic about technology and software
+          development. Once a military Sergeant who fought with valor during the
+          Iraq war, now a computer programmer.{" "}
+        </p>
       </Container>
     </div>
   );
