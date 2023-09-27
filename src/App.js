@@ -1,12 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Navigation from "./routes/navigation/navigation.component";
 function App() {
   return (
     <div>
-      {/*<Navbar />*/}
-
-
+      <Navigation />
     </div>
   );
 }
