@@ -13,10 +13,10 @@ const Navigation = () => {
       <NavigationContainer>
         <LogoContainer to="/">Jason Breedlove</LogoContainer>
         <NavLinks>
-          <NavLink to={"/projects"}>Projects</NavLink>
+          <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"/about"}>About</NavLink>
+          <NavLink to={"/projects"}>Projects</NavLink>
           <NavLink to={"/contact"}>Contact</NavLink>
-          <NavLink to={"/qualifications"}>Qualifications</NavLink>
           <NavLink to={"/skills"}>Skills</NavLink>
         </NavLinks>
       </NavigationContainer>

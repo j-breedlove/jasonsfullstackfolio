@@ -14,6 +14,7 @@ export const LogoContainer = styled(Link)`
   width: 175px;
   padding: 25px;
   text-decoration: none;
+  text-transform: uppercase;
 `;
 
 export const NavLinks = styled.div`
