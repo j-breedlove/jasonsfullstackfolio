@@ -41,11 +41,11 @@ function Home() {
       <Container>
         <HeaderBlock />
         <Typewriter>{text}</Typewriter>
-        <p>
+        <h3 id={"home__subtitle"}>
           A Full-Stack Developer enthusiastic about technology and software
           development. Once a military Sergeant who fought with valor during the
           Iraq war, now a computer programmer.{" "}
-        </p>
+        </h3>
       </Container>
     </div>
   );

@@ -30,3 +30,13 @@ export const Heading = styled.div`
   //font-family: "Courier Prime", monospace;
   font-size: 36px;
 `;
+
+export const SubHeading = styled.h3`
+    text-align: center;
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+`;
