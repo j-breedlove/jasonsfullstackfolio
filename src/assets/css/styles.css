@@ -425,6 +425,11 @@ img {
 #typewriter {
   margin-top: var(--mb-1);
   margin-bottom: var(--mb-2);
+  font-size: 2.75rem;
+  font-family: "Courier Prime", monospace;
+  height: 3rem; /* This is the same as your font-size. Adjust if needed. */
+  overflow: hidden;
+  white-space: nowrap; /* To ensure the text doesn't wrap to the next line */
 }
 
 .Typewriter__wrapper {

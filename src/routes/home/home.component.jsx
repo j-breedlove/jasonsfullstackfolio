@@ -1,14 +1,15 @@
 import React, { useEffect, useState, Fragment } from "react";
 import SocialIcons from "../../components/social-media/social-media.component";
-import "../../assets/css/style.css";
+import ScrollDownIcon from "../../components/scroll-down-icon/scroll-down-icon.component";
+import "../../assets/css/styles.css";
 
 function Home() {
   const wordsList = [
     "Jason Breedlove",
     "Combat Soldier",
+    "Computer Programmer",
     "Full-Stack Developer",
-    "Designer",
-    "Creator",
+    "Designer, Creator",
   ];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentCharIndex, setCurrentCharIndex] = useState(0);
@@ -59,6 +60,7 @@ function Home() {
             </div>
           </div>
         </div>
+        <ScrollDownIcon />
       </section>
     </Fragment>
   );
