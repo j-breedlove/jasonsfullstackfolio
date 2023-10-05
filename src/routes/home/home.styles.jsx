@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import "../../assets/css/style.css";
 
 const blinkCaret = keyframes`
   from, to { border-color: transparent }
@@ -32,11 +33,11 @@ export const Heading = styled.div`
 `;
 
 export const SubHeading = styled.h3`
-    text-align: center;
-    font-size: var(--h3-font-size);
-    color: var(--text-color);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-1);
-    padding: 1rem 1.5rem 1rem 1.5rem;
-  }
+  text-align: center;
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  width: 50%;
 `;

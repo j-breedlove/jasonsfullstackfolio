@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Container, Typewriter } from "./home.styles"; // Import your styled components
-import HeaderBlock from "../../components/header-block/header-block.component";
+import React, { useEffect, useState, Fragment } from "react";
+import SocialIcons from "../../components/social-media/social-media.component";
+import "../../assets/css/style.css";
 
 function Home() {
   const wordsList = [
@@ -37,17 +37,30 @@ function Home() {
   }, [currentWordIndex, currentCharIndex, text]);
 
   return (
-    <div className="App">
-      <Container>
-        <HeaderBlock />
-        <Typewriter>{text}</Typewriter>
-        <h3 id={"home__subtitle"}>
-          A Full-Stack Developer enthusiastic about technology and software
-          development. Once a military Sergeant who fought with valor during the
-          Iraq war, now a computer programmer.{" "}
-        </h3>
-      </Container>
-    </div>
+    <Fragment>
+      <section className="home section" id="home">
+        <div className="home__container container grid">
+          <div className="home__content grid">
+            <div className="home__data">
+              <small className="home__welcome s-color">
+                {" "}
+                Welcome to my Portfolio Website!{" "}
+              </small>
+              <h1 className="home__title"> Hey I'm </h1>
+              <div id="typewriter">{text}</div>
+              <h3 className="home__subtitle" id="home-bio">
+                A Full-Stack Developer enthusiastic about technology and
+                software development. Once a military Sergeant who fought with
+                valor during the Iraq war, now a computer programmer.
+              </h3>
+            </div>
+            <div className="home__social">
+              <SocialIcons />
+            </div>
+          </div>
+        </div>
+      </section>
+    </Fragment>
   );
 }
 export default Home;
